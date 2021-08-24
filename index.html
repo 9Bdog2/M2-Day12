@@ -31,6 +31,14 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 
     <title>Bogdan's Album collection</title>
     <style>
+        body{
+            background: linear-gradient(45deg, rgba(37,0,64,1) 0%, rgba(67,88,116,1) 100%);
+            background-attachment: fixed;
+            color: white;
+        }
+        
+        
+        
         /* EXERCISE 1
             For every Album we'd like to have a consistent style.
             Therefore you should create a class for each of the following elements:
@@ -46,24 +54,34 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
          */
 
          .albumContainer{
-            height: 300px;
-            
+            text-align: center;
+            padding-bottom: 1em;
+            margin: 1em;
+         }
+         .album-container img{
+            width: 100%;
          }
          .albumCover{
             width: 260px;
             height: 240px;
          }
-         .albumTitle{
+         .album-artist::after{
+             content: ' • '
+         }
+         .album-Title{
+            margin-top: 0.50em;
+            margin-bottom: 0.25em;
+            font-size: 1.3em;
+         }
+        
+         .album-Genre{
 
          }
-         .albumGroup{
+         
 
-         }
-         .albumGenre{
-
-         }
-         .albumDuration{
-
+         nav {
+             background-color: teal;
+             height: 7vh;
          }
 
 
