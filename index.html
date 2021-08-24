@@ -47,7 +47,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 
          .albumContainer{
             height: 300px;
-            background-color: black;
+            
          }
          .albumCover{
             width: 260px;
@@ -78,7 +78,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2 ">
             <a class="navbar-brand" href="#">Musical albums</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -119,19 +119,19 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
-        <div class="container">
+        <div class="container mb-4">
             <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6 albumContainer">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
                <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/acastus.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 albumContainer">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
                 <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/wielopole-skrzynskie-found-your-place.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 albumContainer">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
                 <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/baxter-woods-all-is-vanity.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 albumContainer">
-                <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/kickoff-return-another-mans-wife.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
+                <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover56.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
               </div>
             </div>
           </div>
@@ -148,18 +148,42 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - ... And whatever you think it's interesting about it!
         -->
 
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 albumContainer">
-                    <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/acastus.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
+                    <div class="albumContainer mb-5" >
+                        <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/tobacco-road-twice-blessed.jpg" class="card-img-top albumCover" alt="band">
+                        <div class="card-body ">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        
 
     <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 albumContainer">
+                    <div class="albumContainer mb-5" >
+                        <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover51.jpg" class="card-img-top albumCover" alt="band">
+                        <div class="card-body ">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
@@ -173,9 +197,77 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
         -->
 
+
+
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
+
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4 mt-5">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+        
+            <!-- Grid row -->
+            <div class="row">
+        
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+        
+                <!-- Content -->
+                <h5 class="text-uppercase">Footer Content</h5>
+                <p>Footer information.</p>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <hr class="clearfix w-100 d-md-none pb-3">
+        
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+        
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+        
+                <ul class="list-unstyled">
+                    <li>
+                    <a href="#!">Link 1</a>
+                    </li>
+                </ul>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+        
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+        
+                <ul class="list-unstyled">
+                    <li>
+                    <a href="#!">Link 1</a>
+                    </li>
+                </ul>
+        
+                </div>
+                <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row -->
+        
+            </div>
+            <!-- Footer Links -->
+        
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href=""> Bogdan's playlist</a>
+            </div>
+            <!-- Copyright -->
+        
+        </footer>
+  <!-- Footer -->
 
     <!-- ############ EXTRA:
         EXERCISE 9
