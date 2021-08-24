@@ -32,7 +32,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <title>Bogdan's Album collection</title>
     <style>
         body{
-            background: linear-gradient(45deg, rgba(37,0,64,1) 0%, rgba(67,88,116,1) 100%);
+            background: linear-gradient(45deg, rgb(165, 171, 255) 0%, rgb(0, 50, 116) 100%);
             background-attachment: fixed;
             color: white;
         }
@@ -68,17 +68,26 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             margin-top: 0.50em;
             margin-bottom: 0.25em;
             font-size: 1.3em;
+            text-align: center;
          }
-        
-         .album-Genre{
-
-         }
-         
 
          nav {
-             background-color: teal;
+             background-color: rgb(39, 189, 189);
              height: 7vh;
          }
+
+         .carousel-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: lowercase;
+            color: thistle;
+            mix-blend-mode: color-burn;
+            font-weight: 900;
+         }
+
+
 
 
     </style>
@@ -107,13 +116,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     <a class="nav-link" href="#favourite-album">Favourite Albums</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Best Album ever</a>
+                        <a class="nav-link" href="#best-album">Best Album </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Wall of shame</a>
+                        <a class="nav-link" href="#wall-of-shame">Wall of shame</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Best artist ever</a>
+                        <a class="nav-link" href="#best-artist">Best artist </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">The Tapestry</a>
@@ -122,6 +131,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
           </nav>
 
+          <hr>
 
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
@@ -180,21 +190,26 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
+        <hr>
 
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 albumContainer">
-                    <div class="albumContainer mb-5" >
-                        <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/tobacco-road-twice-blessed.jpg" class="card-img-top albumCover" alt="band">
-                        <div class="card-body ">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section id="best-album">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover56.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="d-flex flex-column justify-content-center h-100">
+                            <h4>Been a fine day - Two Stroke Diesel</h4>
+                            <div>
+                                "This has been my favourite album since i was a kid and it is still the one to go with"
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
 
         
 
@@ -202,104 +217,70 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
+        <hr>
 
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 albumContainer">
-                    <div class="albumContainer mb-5" >
-                        <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover51.jpg" class="card-img-top albumCover" alt="band">
-                        <div class="card-body ">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section id="wall-of-shame"> 
+            <div class="container">
+                <divc class="row">
+                    <div class="col-12">
+                        <h1 class="text-center my-4">Wall of Shame</h1>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="album-container">
+                            <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover51.jpg" class="img-fluid">
+                            <h4 class="album-title">Terrible Album #1</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="album-container">
+                            <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover48.jpg" class="img-fluid">
+                            <h4 class="album-title">Terrible Album #2</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="album-container">
+                            <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover47.jpg" class="img-fluid">
+                            <h4 class="album-title">Terrible Album #3</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
+        <hr>
+
+        <section id="best-artist">
+
+        </section>
+
+
 
     <!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
             Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
         -->
+        <hr>
+
 
 
 
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
+        <hr>
+        
+        
 
-        <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4 mt-5">
 
-            <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
-        
-            <!-- Grid row -->
-            <div class="row">
-        
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-        
-                <!-- Content -->
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>Footer information.</p>
-        
-                </div>
-                <!-- Grid column -->
-        
-                <hr class="clearfix w-100 d-md-none pb-3">
-        
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-        
-                <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
-        
-                <ul class="list-unstyled">
-                    <li>
-                    <a href="#!">Link 1</a>
-                    </li>
-                </ul>
-        
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-        
-                <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
-        
-                <ul class="list-unstyled">
-                    <li>
-                    <a href="#!">Link 1</a>
-                    </li>
-                </ul>
-        
-                </div>
-                <!-- Grid column -->
-        
-            </div>
-            <!-- Grid row -->
-        
-            </div>
-            <!-- Footer Links -->
-        
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href=""> Bogdan's playlist</a>
-            </div>
-            <!-- Copyright -->
-        
-        </footer>
+       
   <!-- Footer -->
 
     <!-- ############ EXTRA:
