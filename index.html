@@ -61,10 +61,6 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
          .album-container img{
             width: 100%;
          }
-         .albumCover{
-            width: 260px;
-            height: 240px;
-         }
          .album-artist::after{
              content: ' • '
          }
@@ -96,7 +92,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2 ">
+        <nav class="navbar navbar-expand-lg navbar-dark  mb-2 sticky-top ">
             <a class="navbar-brand" href="#">Musical albums</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -107,25 +103,22 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#favourite-album">Favourite Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Best Album ever</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wall of shame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Best artist ever</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">The Tapestry</a>
+                    </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
             </div>
           </nav>
 
@@ -137,22 +130,44 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
-        <div class="container mb-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
-               <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/acastus.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
-                <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/wielopole-skrzynskie-found-your-place.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
-                <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/baxter-woods-all-is-vanity.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12 albumContainer">
-                <div class="albumGroup albumGenre albumDuration"><img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover56.jpg" class="albumCover" alt="band"><p class="albumTitle" >Album</p></img></div>
-              </div>
+        <section id="favourite-album">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="album-container">
+                                <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/acastus.jpg" class="img-fluid">
+                                <h4 class="album-title">Before the next chance</h4>
+                                <span class="album-artist">Acastus</span>
+                                <span class="album-genre">Rock</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="album-container">
+                                <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/wielopole-skrzynskie-found-your-place.jpg" class="img-fluid">
+                                <h4 class="album-title">Founf your  place</h4>
+                                <span class="album-artist">WS</span>
+                                <span class="album-genre">Synthwave</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="album-container">
+                                <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/baxter-woods-all-is-vanity.jpg" class="img-fluid">
+                                <h4 class="album-title">All is vanity</h4>
+                                <span class="album-artist">BW</span>
+                                <span class="album-genre">Power Electronics</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="album-container">
+                                <img src="http://www.noiseaddicts.com/wp-content/uploads/2009/03/cover56.jpg" class="img-fluid">
+                                <h4 class="album-title">Been a fine day</h4>
+                                <span class="album-artist">Two Stroke Diesel</span>
+                                <span class="album-genre">Acid Jazz</span>
+                            </div>
+                        </div>
+                    </div>
             </div>
-          </div>
+        </section>
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
