@@ -100,7 +100,18 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             margin: 10px auto;
         }
         
+        .toggle-btn{
+            width: 100px;
+            position: sticky;
+            top: 5em;
+            margin-left: auto;
+            margin-top: 3em;
+            z-index: 1;
+        }
 
+        .carousel img {
+            min-height: 80vh;
+        }
 
     </style>
 </head>
@@ -380,6 +391,8 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Create an album details area which will be toggled on and off by clicking on the album image.
         -->
 
+
+
     <!-- EXERCISE 10
             Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible).
             (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
@@ -389,7 +402,43 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
          EXERCISE 11
             Add in the footer a field that counts, on page load, how many ALBUMS are present on the page.
         -->
+        <script>
 
+            window.onload = function() {
+                addToggleButtons()
+                countAlbums()
+            }
+
+            function addToggleButtons(){
+
+                for(let section of document.querySelectorAll("section")){
+                    section.children[0].classList.add("collapse")
+                    section.children[0].classList.add("show")
+
+                    section.innerHTML = 
+                    `<button class='btn btn-outline-light
+                     toggle-btn' data-bs-toggle="collapse"
+                      data-bs-target="#${section.id} > div">
+                            Show/hide section
+                        </button>` + section.innerHTML
+                }
+            }
+
+            function countAlbums() {
+                const albumN = document.querySelectorAll("img").length - 3
+
+                const span = document.createElement("span")
+                span.classList.add("text-center")
+                span.classList.add("d-inline-block")
+                span.classList.add("w-100")
+                span.classList.add("my-4")
+
+                span.innerHTML = `This page contains ${albumN} albums.`
+                document.querySelector("footer").appendChild(span)
+            }
+
+
+        </script>
 
    
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
